@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "buildCommand": "npm install",
+  "outputDirectory": "public",
+  "functions": {
+    "api/gerar-pdf.js": {
+      "memory": 1024,
+      "maxDuration": 30
+    }
+  },
+  "rewrites": [
+    { "source": "/gerar-pdf", "destination": "/api/gerar-pdf" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
